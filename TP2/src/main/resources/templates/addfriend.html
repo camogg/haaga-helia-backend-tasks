@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+	<h1>Add friend</h1>
+	<div>
+		<form action="#" th:action="@{save}" th:object="${student}" method="post">
+			<label for="firstName">First name</label>
+			<input type="text" id="firstName" th:field="*{firstName}" />
+			<div style="clear: both; display: block; height: 10px;"></div>
+		  	<label for="lastName">Last name</label>
+			<input type="text" id="lastName" th:field="*{lastName}" />
+			<div style="clear: both; display: block; height: 10px;"></div>
+			<input type="submit" value="Submit"></input>
+		</form>
+	</div>
+</body>
+</html>

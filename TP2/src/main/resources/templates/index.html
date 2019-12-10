@@ -1,0 +1,11 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+	<h2>My friends</h2>
+	<ul th:each = "student : ${students}">
+		<li th:text="${student.firstName}+' '+${student.lastName}"></li>
+	</ul>
+	<a th:href="@{/add}">Add Friend</a>
+	
+</body>
+</html>
